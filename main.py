@@ -19,7 +19,7 @@ for row in data:
         email = row['email']
         name = row['name']
 
-        with open(f"letter_templates/letter_{randint(1,3)}.txt",'r') as file:
+        with open(f"letter_{randint(1,3)}.txt",'r') as file:
             letter = file.read()
             letter = letter.replace("[NAME]",name)
             letter = letter.replace("Angela","Viraj")
